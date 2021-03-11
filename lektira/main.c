@@ -2,8 +2,6 @@
 #include <stdlib.h>
 #include <string.h>
 
-// https://open.kattis.com/problems/lektira
-
 void
 swap(
   char *a,
