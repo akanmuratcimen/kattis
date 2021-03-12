@@ -32,14 +32,14 @@ main(
   char word[50];
   scanf("%s", word);
 
-  int len = strlen(word);
+  size_t len = strlen(word);
   char *crr = malloc(len + 1);
   char *result = malloc(len + 1);
 
   strcpy(result, word);
 
-  for (int i = 0; i < len; ++i) {
-    for (int j = i + 1; j < len - 1; ++j) {
+  for (size_t i = 0; i < len; ++i) {
+    for (size_t j = i + 1; j < len - 1; ++j) {
       strcpy(crr, word);
       
       reverse(crr, crr + i);
